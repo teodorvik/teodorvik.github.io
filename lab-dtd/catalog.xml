@@ -8,7 +8,7 @@
       <author>Arciniegas, Fabio</author>
       <title>XML Developer's Guide</title>
       <type genre="Computer"/>
-      <price unit="$">23.95</price>
+    <!--  <price unit="$">23.95</price> -->
       <publish_date>
       	<year>2000</year>
       	<month>12</month>

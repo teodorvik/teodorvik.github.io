@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 
-<!DOCTYPE catalog SYSTEM "catalog.dtd">
+<!DOCTYPE catalog SYSTEM "http://teodorvik.github.io/lab-dtd/catalog.dtd">
 
 
 <catalog title="My catalog">

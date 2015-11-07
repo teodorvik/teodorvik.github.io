@@ -24,4 +24,4 @@
 <!ELEMENT link (#PCDATA)>
 
 <!ELEMENT articles (article*)>
-<!ELEMENT article (author+, year?, link?, title)>
+<!ELEMENT article (author+, title, year?, link?)>

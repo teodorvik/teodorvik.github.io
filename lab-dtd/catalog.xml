@@ -2,8 +2,6 @@
 
 <!DOCTYPE catalog SYSTEM "http://teodorvik.github.io/lab-dtd/catalog.dtd">
 
->>>>>>> 26f60e85323a37172d348737e42e1e785519d95a
-
 <catalog title="My catalog">
 <books>
    <book id="bk101">

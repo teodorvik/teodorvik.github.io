@@ -13,7 +13,7 @@
 <!ELEMENT author (#PCDATA)>
 <!ELEMENT type EMPTY>
 <!ATTLIST type genre (Computer|Fantasy|Romance|Horror|ScienceFiction|Other) #IMPLIED>
-<!ELEMENT price EMPTY>
+<!ELEMENT price (#PCDATA)>
 <!ATTLIST price unit CDATA #IMPLIED>
 <!ELEMENT publish_date (%date;)>
 <!ELEMENT shelfplacement (id+)>

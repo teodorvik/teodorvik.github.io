@@ -6,8 +6,10 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <html>
   
   <body>
-    
-    <xsl:for-each select="./*">
+    <xsl:value-of select="books"></xsl:value-of>
+    <xsl:value-of select="."></xsl:value-of>
+
+    <xsl:for-each select="/*">
       <h1>Hej</h1>
     </xsl:for-each>
     <!--  h1 for each child in catalog 

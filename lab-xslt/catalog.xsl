@@ -6,8 +6,15 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <html>
   
   <body>
-  
-      XSLT laboration
+    
+    <xsl:for-each select="catalog">
+      <h1>Hej</h1>
+    </xsl:for-each>
+    <!--  h1 for each child in catalog 
+        ul
+          li for each child in books/articles
+            strong
+              a href -->
   </body>
   
   </html>

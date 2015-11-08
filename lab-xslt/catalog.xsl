@@ -8,7 +8,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   <body>
     <xsl:for-each select="/"> <!-- For each child in catalog-->
       <h1>
-        <xsl:value-of select="."/>
+        <xsl:value-of select ="name(.)"/>
       </h1>
       <ul>
         <xsl:for-each select="./*"> <!-- for each book/article in books/articles -->

@@ -6,7 +6,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <html>
   
   <body>
-    <xsl:for-each select="./*"> <!-- For each child in catalog-->
+    <xsl:for-each select="/"> <!-- For each child in catalog-->
       <h1>
         Books
         <!-- <xsl:value-of select="."/> -->

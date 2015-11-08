@@ -7,7 +7,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   
   <body>
     
-    <xsl:for-each select="catalog">
+    <xsl:for-each select="catalog/*">
       <h1>Hej</h1>
     </xsl:for-each>
     <!--  h1 for each child in catalog 

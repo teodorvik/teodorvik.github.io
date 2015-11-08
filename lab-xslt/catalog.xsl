@@ -6,7 +6,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <html>
   
   <body>
-    <xsl:for-each select="/"> <!-- For each child in catalog-->
+    <xsl:for-each select="./*"> <!-- For each child in catalog-->
       <h1>
         <xsl:value-of select="."/>
       </h1>
@@ -27,11 +27,6 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
         </xsl:for-each>
       </ul>
     </xsl:for-each>
-    <!--  h1 for each child in catalog 
-        ul
-          li for each child in books/articles
-            strong
-              a href -->
   </body>
   
   </html>

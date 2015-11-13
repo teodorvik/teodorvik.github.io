@@ -3,10 +3,14 @@
 	<xsl:output method="html"/>
 	
 	
-<!--Make a template which matches all books older than 2006 having the genre Computer.
+<!-- Make a template which matches all books older than 2006 having the genre Computer.
 Then write the titles of the corresponding books within P-tags  -->
-	
-	
+
+  <xsl:template match="//book[price/@year&lt;2006]">
+    <xsl:if test="type/@genre='Computer'"> 
+      <p><xsl:value-of select="../@title"/></p>
+      </xsl:if>
+  </xsl:template>
 
   		
 </xsl:stylesheet>

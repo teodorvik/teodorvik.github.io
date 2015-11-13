@@ -6,8 +6,8 @@
 <!--Make a template which writes the titles of all books,
 enclosed within P-tags -->
 	
-<xsl:template match="catalog/books">
-  <p><xsl:value-of select="//book/@title"/></p>
+<xsl:template match="//book">
+  <p><xsl:value-of select="@title"/></p>
 </xsl:template> 
 
   		

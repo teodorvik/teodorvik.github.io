@@ -7,7 +7,7 @@
 enclosed within P-tags -->
 	
 <xsl:template match="catalog/books">
-  <p><xsl:value-of select="book/@title"/></p>
+  <p><xsl:value-of select="//book/@title"/></p>
 </xsl:template> 
 
   		

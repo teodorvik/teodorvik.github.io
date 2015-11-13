@@ -9,7 +9,7 @@ writes the number of books with genre Computer with a price less than 40 dollars
 
   <xsl:template match="/">
     
-      <xsl:if test ="//book/@genre = 'Computer'">
+      <xsl:if test ="./books/book/@genre = 'Computer'">
         <p>Hej</p>
         <xsl:if test="price/@value&lt;40.0">
           <xsl:value-of select="@title"/>

@@ -9,7 +9,7 @@
 
   <xsl:template match="//book">
     <xsl:if test="price/@value&lt;30.0">
-      <p><xsl:value-of select="@title"/></p>
+      <p><xsl:value-of select="../@title"/></p>
     </xsl:if>
   </xsl:template>
 

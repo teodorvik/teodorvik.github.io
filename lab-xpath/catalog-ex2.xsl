@@ -3,9 +3,14 @@
 	<xsl:output method="html"/>
 	
 	
-<!--Make a template which, within P-tags, writes the titles of all books
-with the side condition that it is cheaper than 30 dollars  -->
-	
+<!-- Gör	en	mall	som,	inom	P-taggar,	skriver	ut	titlarna	på	
+     alla	böcker under	förutsättningen	att	de	är	
+     billigare	än	30	dollar  -->
 
-  		
+  <xsl:template match="//book">
+    <xsl:if test="price/@value&lt;30.0">
+      <p><xsl:value-of select="@title"/></p>
+    </xsl:if>
+  </xsl:template>
+
 </xsl:stylesheet>

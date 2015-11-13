@@ -7,7 +7,7 @@
 Then write the titles of the corresponding books within P-tags  -->
 
   <xsl:template match="//book[publish_date/@year&lt;2006]">
-    <xsl:if test="type/@genre='Computer'"> 
+    <xsl:if test="contains(type/@genre, 'Computer')"> 
       <p><xsl:value-of select="../@title"/></p>
     </xsl:if>
   </xsl:template>

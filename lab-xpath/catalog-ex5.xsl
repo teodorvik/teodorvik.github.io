@@ -7,7 +7,12 @@
 the books with genre Computer
 
   -->
-	
+
+  <xsl:template match="/">
+
+    <xsl:value-of select="sum(//book[type/@genre='Computer']/price/@value)"/>
+
+  </xsl:template>
 
   		
 </xsl:stylesheet>

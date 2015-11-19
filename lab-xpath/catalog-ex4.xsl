@@ -8,8 +8,8 @@ writes the number of books with genre Computer with a price less than 40 dollars
   -->
 
   <xsl:template match="/">
-    
-    <xsl:value-of select="count(//book[price/@value&lt;40.0]/type[@genre='Computer'])"/>
+
+    <p><xsl:value-of select="count(//book[price/@value&lt;40.0]/type[@genre='Computer'])"/></p>
 
   </xsl:template>
   		

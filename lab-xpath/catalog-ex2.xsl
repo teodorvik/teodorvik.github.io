@@ -7,10 +7,8 @@
      alla	böcker under	förutsättningen	att	de	är	
      billigare	än	30	dollar  -->
 
-  <xsl:template match="//book">
-    <xsl:if test="@value&lt;30.0">
+  <xsl:template match="//book[@value&lt;30.0]">
       <p><xsl:value-of select="@title"/></p>
-    </xsl:if>
   </xsl:template>
 
 </xsl:stylesheet>
